@@ -1,0 +1,111 @@
+body{
+background-image: url("cenariobrabo.gif");
+background-size: cover;
+overflow: hidden;
+
+}
+
+#texto{
+    z-index: -10;
+    position: absolute;
+    font-size: 25px;
+    margin: 10px 40vw;
+}
+
+#resetar{
+    margin: 90px 42.5vw;
+    font-size: 25px;
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    background-image: url("backgrounddobotao.jpg");
+    background-size: cover;
+    background-position-y: -30px;
+    border:5px inset blue;
+    border-radius: 10px;
+    color:red;
+
+}
+
+#resetar:hover{
+    transition: 100ms;
+    transform: scale(1.2);
+    box-shadow: black 3px 3px 3px 3px
+}
+
+.goku{
+position: absolute;
+margin: 200px 100px;
+}
+
+.goku:hover{
+    transform:scale(1.1);
+    transition: 200ms;
+}
+
+#gokucarregando{
+position:absolute;
+margin: 222px 120px;
+visibility: hidden;
+}
+
+#gokucarregando:hover{
+    transform:scale(1.1);
+    transition: 200ms;
+}
+
+#gokucarregando1{
+   position: absolute;
+   margin: 222px 120px;
+   visibility: hidden;
+}
+
+#kamehamehacharge{
+    position: absolute;
+    margin: 337px 150px;
+    visibility: hidden;
+}
+
+#kamehamehacharge{
+    width: 50px;
+    visibility: hidden;
+}
+
+#kamehamehacharge:hover{
+    transition: 200ms;
+    transform:scale(2.5);
+    visibility: hidden;
+}
+
+#gokukamehameha{
+    position: absolute;
+    margin: 190px 120px;
+    visibility: hidden;
+}
+
+.kamehameha1{
+    margin: 110px 350px;
+    height: 500px;
+    width: 1400px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.animacao{
+    animation: animate 2s linear forwards
+}
+
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 500px;
+    }
+    50% {
+        width: 700px;
+        height: 500px;
+    }
+    100% {
+        width: 1400px;
+        height: 500px;
+    }
+}
