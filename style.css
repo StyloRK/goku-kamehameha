@@ -1,80 +1,95 @@
 body{
-background-image: url("cenariobrabo.gif");
-background-size: cover;
-overflow: hidden;
-
+    background-image: url("cenariobrabo.gif");
+    background-size: cover;
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
 }
+
 
 #texto{
     z-index: -10;
     position: absolute;
     font-size: 25px;
-    margin: 10px 40vw;
+    margin: 10px 32.5vw;
+    min-width: 100vw;
 }
 
 #resetar{
-    margin: 90px 42.5vw;
+    color: red;
     font-size: 25px;
-    height: 100px;
-    width: 150px;
+    margin: 90px 42.5vw;
     position: absolute;
     background-image: url("backgrounddobotao.jpg");
     background-size: cover;
     background-position-y: -30px;
-    border:5px inset blue;
+    height: 100px;
+    width: 150px;
+    border: 5px inset blue;
     border-radius: 10px;
-    color:red;
-
 }
 
 #resetar:hover{
     transition: 100ms;
     transform: scale(1.2);
-    box-shadow: black 3px 3px 3px 3px
+    box-shadow: black 3px 3px 3px 3px;
 }
 
 .goku{
-position: absolute;
-margin: 200px 100px;
+    position: absolute;
+    margin: 200px 100px;
 }
 
 .goku:hover{
-    transform:scale(1.1);
     transition: 200ms;
+    transform: scale(1.1);
 }
 
+
 #gokucarregando{
-position:absolute;
-margin: 222px 120px;
-visibility: hidden;
+    position: absolute;
+    margin: 222px 120px;
+    visibility: hidden;
+
 }
 
 #gokucarregando:hover{
-    transform:scale(1.1);
     transition: 200ms;
+    transform: scale(1.1);
 }
 
 #gokucarregando1{
-   position: absolute;
-   margin: 222px 120px;
-   visibility: hidden;
+    position: absolute;
+    margin: 222px 120px;
+    visibility: hidden;
+
 }
 
 #kamehamehacharge{
     position: absolute;
+    width: 50px;
     margin: 337px 150px;
     visibility: hidden;
+
 }
 
-#kamehamehacharge{
+#kamehamehacharge1{
+    position: absolute;
     width: 50px;
+    margin: 337px 150px;
     visibility: hidden;
+
+}
+    
+#kamehamehacharge1:hover{
+    transition: 200ms;
+    transform: scale(2.5);
 }
 
 #kamehamehacharge:hover{
     transition: 200ms;
-    transform:scale(2.5);
-    visibility: hidden;
+    transform: scale(2.5);
 }
 
 #gokukamehameha{
@@ -89,13 +104,14 @@ visibility: hidden;
     width: 1400px;
     position: absolute;
     visibility: hidden;
+
 }
 
 .animacao{
-    animation: animate 2s linear forwards
+    animation: animate 2s linear forwards;
 }
 
-@keyframes animate{
+@keyframes animate {
     0%{
         width: 0px;
         height: 500px;
@@ -108,4 +124,4 @@ visibility: hidden;
         width: 1400px;
         height: 500px;
     }
-}
+    }
